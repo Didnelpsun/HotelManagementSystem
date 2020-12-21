@@ -10,6 +10,7 @@ namespace HotelManagementDAL
 {
     public class SqlCommon
     {
+        // 根据MySQL用户名与密码更换连接字符串
         static private string _connString = "Database='HotelManagement';Data Source='localhost';User Id='root';Password='root';charset='utf8';pooling=true";
 
 
