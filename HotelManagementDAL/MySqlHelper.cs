@@ -4,6 +4,7 @@ using System.Configuration;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Diagnostics;
 
 /// <summary>
 ///MYSQLHelper 的摘要说明
@@ -11,7 +12,7 @@ using System.Data;
 public abstract class MySqlHelper
 {
     //数据库连接字符串
-    public static string Conn = "Database='Hotel_Management';Data Source='localhost';User Id='root';Password='123456';charset='utf8';pooling=true";
+    public static string Conn = "Database='Hotel_Management';Data Source='localhost';User Id='root';Password='root';charset='utf8';pooling=true";
 
     /// <summary>
     /// 自定义的函数重载
@@ -132,10 +133,11 @@ public abstract class MySqlHelper
             cmd.Parameters.Clear();
             return reader;
         }
-        catch
+        catch(Exception e)
         {
             //关闭连接，抛出异常
             conn.Close();
+            Debug.Write(e.Message);
             throw;
         }
     }
