@@ -32,10 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItem_file = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_new = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_new_room = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_new_roomer = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ToolStripMenuItem_logOff = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_quit = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_roomer = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,10 +42,8 @@
             this.ToolStripMenuItem_checkin_mng = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemCheckOut = new System.Windows.Forms.ToolStripMenuItem();
             this.SearchAllLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_System = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_psMdf = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.ToolStripMenuItem_about = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_new_room = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_new_roomer = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.textbox_time = new System.Windows.Forms.ToolStripStatusLabel();
@@ -64,6 +58,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.ToolStripMenuItem_changePsw = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,8 +73,7 @@
             this.ToolStripMenuItem_file,
             this.ToolStripMenuItem_roomer,
             this.ToolStripMenuItem_room,
-            this.ToolStripMenuItem_checkin,
-            this.ToolStripMenuItem_System});
+            this.ToolStripMenuItem_checkin});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(495, 25);
@@ -89,53 +83,24 @@
             // ToolStripMenuItem_file
             // 
             this.ToolStripMenuItem_file.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_new,
-            this.toolStripSeparator2,
+            this.ToolStripMenuItem_changePsw,
             this.ToolStripMenuItem_logOff,
             this.ToolStripMenuItem_quit});
             this.ToolStripMenuItem_file.Name = "ToolStripMenuItem_file";
             this.ToolStripMenuItem_file.Size = new System.Drawing.Size(44, 21);
-            this.ToolStripMenuItem_file.Text = "文件";
-            // 
-            // ToolStripMenuItem_new
-            // 
-            this.ToolStripMenuItem_new.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_new_room,
-            this.ToolStripMenuItem_new_roomer});
-            this.ToolStripMenuItem_new.Name = "ToolStripMenuItem_new";
-            this.ToolStripMenuItem_new.Size = new System.Drawing.Size(100, 22);
-            this.ToolStripMenuItem_new.Text = "新建";
-            // 
-            // ToolStripMenuItem_new_room
-            // 
-            this.ToolStripMenuItem_new_room.Name = "ToolStripMenuItem_new_room";
-            this.ToolStripMenuItem_new_room.Size = new System.Drawing.Size(100, 22);
-            this.ToolStripMenuItem_new_room.Text = "住房";
-            this.ToolStripMenuItem_new_room.Click += new System.EventHandler(this.ToolStripMenuItem_new_room_Click);
-            // 
-            // ToolStripMenuItem_new_roomer
-            // 
-            this.ToolStripMenuItem_new_roomer.Name = "ToolStripMenuItem_new_roomer";
-            this.ToolStripMenuItem_new_roomer.Size = new System.Drawing.Size(100, 22);
-            this.ToolStripMenuItem_new_roomer.Text = "住客";
-            this.ToolStripMenuItem_new_roomer.Click += new System.EventHandler(this.ToolStripMenuItem_new_roomer_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(97, 6);
+            this.ToolStripMenuItem_file.Text = "系统";
             // 
             // ToolStripMenuItem_logOff
             // 
             this.ToolStripMenuItem_logOff.Name = "ToolStripMenuItem_logOff";
-            this.ToolStripMenuItem_logOff.Size = new System.Drawing.Size(100, 22);
+            this.ToolStripMenuItem_logOff.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItem_logOff.Text = "注销";
             this.ToolStripMenuItem_logOff.Click += new System.EventHandler(this.ToolStripMenuItem_logOff_Click);
             // 
             // ToolStripMenuItem_quit
             // 
             this.ToolStripMenuItem_quit.Name = "ToolStripMenuItem_quit";
-            this.ToolStripMenuItem_quit.Size = new System.Drawing.Size(100, 22);
+            this.ToolStripMenuItem_quit.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItem_quit.Text = "退出";
             this.ToolStripMenuItem_quit.Click += new System.EventHandler(this.ToolStripMenuItem_quit_Click);
             // 
@@ -200,34 +165,15 @@
             this.SearchAllLogToolStripMenuItem.Text = "查询所有的住房记录";
             this.SearchAllLogToolStripMenuItem.Click += new System.EventHandler(this.SearchAllLogToolStripMenuItem_Click);
             // 
-            // ToolStripMenuItem_System
+            // ToolStripMenuItem_new_room
             // 
-            this.ToolStripMenuItem_System.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_psMdf,
-            this.toolStripSeparator1,
-            this.ToolStripMenuItem_about});
-            this.ToolStripMenuItem_System.Name = "ToolStripMenuItem_System";
-            this.ToolStripMenuItem_System.Size = new System.Drawing.Size(44, 21);
-            this.ToolStripMenuItem_System.Text = "系统";
+            this.ToolStripMenuItem_new_room.Name = "ToolStripMenuItem_new_room";
+            this.ToolStripMenuItem_new_room.Size = new System.Drawing.Size(32, 19);
             // 
-            // ToolStripMenuItem_psMdf
+            // ToolStripMenuItem_new_roomer
             // 
-            this.ToolStripMenuItem_psMdf.Name = "ToolStripMenuItem_psMdf";
-            this.ToolStripMenuItem_psMdf.Size = new System.Drawing.Size(180, 22);
-            this.ToolStripMenuItem_psMdf.Text = "密码修改";
-            this.ToolStripMenuItem_psMdf.Click += new System.EventHandler(this.ToolStripMenuItem_psMdf_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
-            // 
-            // ToolStripMenuItem_about
-            // 
-            this.ToolStripMenuItem_about.Name = "ToolStripMenuItem_about";
-            this.ToolStripMenuItem_about.Size = new System.Drawing.Size(180, 22);
-            this.ToolStripMenuItem_about.Text = "关于";
-            this.ToolStripMenuItem_about.Click += new System.EventHandler(this.ToolStripMenuItem_about_Click);
+            this.ToolStripMenuItem_new_roomer.Name = "ToolStripMenuItem_new_roomer";
+            this.ToolStripMenuItem_new_roomer.Size = new System.Drawing.Size(32, 19);
             // 
             // statusStrip1
             // 
@@ -355,6 +301,13 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "退房管理";
             // 
+            // ToolStripMenuItem_changePsw
+            // 
+            this.ToolStripMenuItem_changePsw.Name = "ToolStripMenuItem_changePsw";
+            this.ToolStripMenuItem_changePsw.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItem_changePsw.Text = "修改密码";
+            this.ToolStripMenuItem_changePsw.Click += new System.EventHandler(this.ToolStripMenuItem_changePsw_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -397,10 +350,6 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_file;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_room;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_roomer;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_System;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_psMdf;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_about;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel textbox_time;
@@ -410,10 +359,8 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_room_mng;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_checkin;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_checkin_mng;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_new;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_new_room;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_new_roomer;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_logOff;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_quit;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_roomer_mng;
@@ -427,5 +374,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_changePsw;
     }
 }

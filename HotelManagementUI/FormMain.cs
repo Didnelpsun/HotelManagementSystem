@@ -62,16 +62,6 @@ namespace HotelManagementUI
             new CheckIn.FormCheckOut().Show();
         }
 
-        private void ToolStripMenuItem_new_room_Click(object sender, EventArgs e)
-        {
-            new Room.FormRoom().Show(); 
-        }
-
-        private void ToolStripMenuItem_new_roomer_Click(object sender, EventArgs e)
-        {
-            new Roomer.FormRoomer().Show();
-        }
-
         private void ToolStripMenuItem_logOff_Click(object sender, EventArgs e)
         {
             new FormLogin().Show();
@@ -98,19 +88,14 @@ namespace HotelManagementUI
             new CheckIn.FormCheckOut().Show();
         }
 
-        private void ToolStripMenuItem_about_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("个人酒店管理系统\n       by Didnelpsun\n            2021.1.11\n","关于",MessageBoxButtons.OK);
-        }
-
-        private void ToolStripMenuItem_psMdf_Click(object sender, EventArgs e)
-        {
-            new System_.FormPsModify(user).Show();
-        }
-
         private void SearchAllLogToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new CheckIn.CheckInLog("").Show();
+        }
+
+        private void ToolStripMenuItem_changePsw_Click(object sender, EventArgs e)
+        {
+            new System_.FormPsModify(user).Show();
         }
     }
 }
