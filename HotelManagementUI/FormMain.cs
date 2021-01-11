@@ -117,6 +117,5 @@ namespace HotelManagementUI
         {
             new CheckIn.CheckInLog("").Show();
         }
-         
     }
 }

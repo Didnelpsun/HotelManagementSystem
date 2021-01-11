@@ -194,12 +194,17 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\HotelManagementBLL\HotelManagementBLL.csproj">
       <Project>{763DFF99-CDAC-4E38-A1CF-ED29E16B708A}</Project>
       <Name>HotelManagementBLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\住客管理.png" />
+    <Content Include="Resources\住房管理.png" />
+    <Content Include="Resources\入住管理.png" />
+    <Content Include="Resources\退房管理.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
