@@ -183,7 +183,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(459, 361);
-            this.ControlBox = false;
             this.Controls.Add(this.button3_close);
             this.Controls.Add(this.button2_clr);
             this.Controls.Add(this.button1_add);

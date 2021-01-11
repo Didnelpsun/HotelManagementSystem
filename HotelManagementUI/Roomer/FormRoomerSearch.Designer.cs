@@ -218,7 +218,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(477, 433);
-            this.ControlBox = false;
             this.Controls.Add(this.button1_Search);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3_close);
