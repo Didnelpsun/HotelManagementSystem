@@ -37,23 +37,16 @@
             this.textBox_pw = new System.Windows.Forms.TextBox();
             this.label_warn = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lable1
             // 
             this.lable1.AutoSize = true;
-            this.lable1.Location = new System.Drawing.Point(18, 44);
+            this.lable1.Location = new System.Drawing.Point(42, 44);
             this.lable1.Name = "lable1";
             this.lable1.Size = new System.Drawing.Size(53, 12);
             this.lable1.TabIndex = 0;
@@ -62,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 96);
+            this.label2.Location = new System.Drawing.Point(54, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 1;
@@ -92,19 +85,19 @@
             // 
             // textBox_user
             // 
-            this.textBox_user.Location = new System.Drawing.Point(89, 35);
+            this.textBox_user.Location = new System.Drawing.Point(113, 41);
             this.textBox_user.Name = "textBox_user";
-            this.textBox_user.Size = new System.Drawing.Size(100, 21);
+            this.textBox_user.Size = new System.Drawing.Size(153, 21);
             this.textBox_user.TabIndex = 4;
             this.textBox_user.MouseEnter += new System.EventHandler(this.textBox_user_MouseEnter);
             this.textBox_user.MouseLeave += new System.EventHandler(this.textBox_user_MouseLeave);
             // 
             // textBox_pw
             // 
-            this.textBox_pw.Location = new System.Drawing.Point(89, 87);
+            this.textBox_pw.Location = new System.Drawing.Point(113, 93);
             this.textBox_pw.Name = "textBox_pw";
             this.textBox_pw.PasswordChar = '*';
-            this.textBox_pw.Size = new System.Drawing.Size(100, 21);
+            this.textBox_pw.Size = new System.Drawing.Size(153, 21);
             this.textBox_pw.TabIndex = 5;
             this.textBox_pw.MouseEnter += new System.EventHandler(this.textBox_pw_MouseEnter);
             this.textBox_pw.MouseLeave += new System.EventHandler(this.textBox_pw_MouseLeave);
@@ -127,7 +120,11 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
+            this.splitContainer1.Panel1.Controls.Add(this.label2);
+            this.splitContainer1.Panel1.Controls.Add(this.textBox_pw);
+            this.splitContainer1.Panel1.Controls.Add(this.label_warn);
+            this.splitContainer1.Panel1.Controls.Add(this.textBox_user);
+            this.splitContainer1.Panel1.Controls.Add(this.lable1);
             // 
             // splitContainer1.Panel2
             // 
@@ -136,38 +133,6 @@
             this.splitContainer1.Size = new System.Drawing.Size(322, 235);
             this.splitContainer1.SplitterDistance = 151;
             this.splitContainer1.TabIndex = 7;
-            // 
-            // splitContainer2
-            // 
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Name = "splitContainer2";
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.Controls.Add(this.pictureBox1);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.label2);
-            this.splitContainer2.Panel2.Controls.Add(this.textBox_pw);
-            this.splitContainer2.Panel2.Controls.Add(this.label_warn);
-            this.splitContainer2.Panel2.Controls.Add(this.textBox_user);
-            this.splitContainer2.Panel2.Controls.Add(this.lable1);
-            this.splitContainer2.Size = new System.Drawing.Size(322, 151);
-            this.splitContainer2.SplitterDistance = 107;
-            this.splitContainer2.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 151);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // FormLogin
             // 
@@ -180,15 +145,10 @@
             this.Name = "FormLogin";
             this.Text = "登录";
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            this.splitContainer2.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -203,8 +163,6 @@
         private System.Windows.Forms.TextBox textBox_pw;
         private System.Windows.Forms.Label label_warn;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
