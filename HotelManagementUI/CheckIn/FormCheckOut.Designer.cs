@@ -121,6 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ControlBox = false;
             this.Controls.Add(this.radioButtonRoomName);
             this.Controls.Add(this.radioButtonIDCard);
             this.Controls.Add(this.textBoxRoomName);
