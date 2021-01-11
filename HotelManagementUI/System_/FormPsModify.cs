@@ -26,6 +26,10 @@ namespace HotelManagementUI.System_
                 MessageBox.Show("密码应大于6位！");
                 return;
             }
+            else if (text.Length > 14){
+                MessageBox.Show("密码不应大于14位！");
+                return;
+            }
             HotelManagementBLL.User.ModifyPs(_name, text);
         }
     }
