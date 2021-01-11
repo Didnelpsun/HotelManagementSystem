@@ -55,21 +55,6 @@ namespace HotelManagementUI.CheckIn
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        { 
-            if (CheckInput())
-            { 
-                int days = (int)dateTimePicker1.Value.Date.Subtract(System.DateTime.Now.Date).TotalDays;
-                decimal pay = Convert.ToDecimal(dataGridView1.CurrentRow.Cells["RoomPrice"].Value);
-                DialogResult rs = MessageBox.Show("共入住"+days+"天\n"+"应付押金"+(days*pay+100)+"元", "是否确认缴纳押金", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if (rs == DialogResult.OK)
-                {
-                    HotelManagementBLL.CheckIn obj = new HotelManagementBLL.CheckIn(dataGridView1);
-                    obj.DealCheckIn(textBoxIDCard.Text.Trim(), dateTimePicker1.Value);
-                }
-                dataGridView1.DataSource = null;
-            }
-        }
 
         bool CheckInput()
         {  
@@ -101,6 +86,22 @@ namespace HotelManagementUI.CheckIn
                 return false;
             }
             return true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (CheckInput())
+            {
+                int days = (int)dateTimePicker1.Value.Date.Subtract(System.DateTime.Now.Date).TotalDays;
+                decimal pay = Convert.ToDecimal(dataGridView1.CurrentRow.Cells["RoomPrice"].Value);
+                DialogResult rs = MessageBox.Show("共入住" + days + "天\n" + "应付押金" + (days * pay + 100) + "元", "是否确认缴纳押金", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (rs == DialogResult.OK)
+                {
+                    HotelManagementBLL.CheckIn obj = new HotelManagementBLL.CheckIn(dataGridView1);
+                    obj.DealCheckIn(textBoxIDCard.Text.Trim(), dateTimePicker1.Value);
+                }
+                dataGridView1.DataSource = null;
+            }
         }
     }
 }

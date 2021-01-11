@@ -20,7 +20,13 @@ namespace HotelManagementUI.System_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            HotelManagementBLL.User.ModifyPs(_name, textBox1.Text.ToString());
+            string text = textBox1.Text.ToString().Trim();
+            if (text.Length < 6)
+            {
+                MessageBox.Show("密码应大于6位！");
+                return;
+            }
+            HotelManagementBLL.User.ModifyPs(_name, text);
         }
     }
 }

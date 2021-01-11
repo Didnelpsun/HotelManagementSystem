@@ -17,14 +17,6 @@ namespace HotelManagementUI.CheckIn
             radioButtonIDCard.Checked = true;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            if (CheckInput())
-            {
-                HotelManagementBLL.CheckIn obj = new HotelManagementBLL.CheckIn();
-                obj.DealCheckOut(this.textBoxIDCard.Text.Trim(), this.textBoxRoomName.Text.Trim(), radioButtonIDCard.Checked);
-            }
-        }
         public bool CheckInput()
         { 
             if (radioButtonIDCard.Checked)
@@ -58,6 +50,15 @@ namespace HotelManagementUI.CheckIn
                  return false;
             } 
             return true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (CheckInput())
+            {
+                HotelManagementBLL.CheckIn obj = new HotelManagementBLL.CheckIn();
+                obj.DealCheckOut(this.textBoxIDCard.Text.Trim(), this.textBoxRoomName.Text.Trim(), radioButtonIDCard.Checked);
+            }
         }
     }
 }

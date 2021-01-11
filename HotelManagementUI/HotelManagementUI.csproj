@@ -201,6 +201,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\add.png" />
+    <Content Include="Resources\all.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\modify.png" />
+    <Content Include="Resources\search.png" />
     <Content Include="Resources\住客管理.png" />
     <Content Include="Resources\住房管理.png" />
     <Content Include="Resources\入住管理.png" />

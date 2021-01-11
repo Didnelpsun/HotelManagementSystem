@@ -100,12 +100,7 @@ namespace HotelManagementUI
 
         private void ToolStripMenuItem_about_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("个人酒店管理系统\n       by luckyone\n            2016.1.1\n","关于",MessageBoxButtons.OK);
-        }
-
-        private void ToolStripMenuItem_system_mng_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("暂未实现\n", "提示", MessageBoxButtons.OK);
+            MessageBox.Show("个人酒店管理系统\n       by Didnelpsun\n            2021.1.11\n","关于",MessageBoxButtons.OK);
         }
 
         private void ToolStripMenuItem_psMdf_Click(object sender, EventArgs e)

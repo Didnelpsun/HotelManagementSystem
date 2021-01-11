@@ -29,26 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCheckOut));
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxIDCard = new System.Windows.Forms.TextBox();
             this.textBoxRoomName = new System.Windows.Forms.TextBox();
             this.radioButtonRoomName = new System.Windows.Forms.RadioButton();
             this.radioButtonIDCard = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("华文琥珀", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(38, 194);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "办理退房：";
             // 
             // label1
             // 
@@ -103,17 +91,15 @@
             this.radioButtonIDCard.Text = "身份证";
             this.radioButtonIDCard.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // button1
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(176, 177);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 42);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.button1.Location = new System.Drawing.Point(99, 208);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "办理退房";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormCheckOut
             // 
@@ -121,33 +107,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButtonRoomName);
             this.Controls.Add(this.radioButtonIDCard);
             this.Controls.Add(this.textBoxRoomName);
             this.Controls.Add(this.textBoxIDCard);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCheckOut";
             this.Text = "退房管理";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxIDCard;
         private System.Windows.Forms.TextBox textBoxRoomName;
         private System.Windows.Forms.RadioButton radioButtonRoomName;
         private System.Windows.Forms.RadioButton radioButtonIDCard;
+        private System.Windows.Forms.Button button1;
     }
 }

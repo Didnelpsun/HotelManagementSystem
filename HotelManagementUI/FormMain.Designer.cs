@@ -47,7 +47,6 @@
             this.ToolStripMenuItemCheckOut = new System.Windows.Forms.ToolStripMenuItem();
             this.SearchAllLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_System = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_system_mng = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_psMdf = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.ToolStripMenuItem_about = new System.Windows.Forms.ToolStripMenuItem();
@@ -204,7 +203,6 @@
             // ToolStripMenuItem_System
             // 
             this.ToolStripMenuItem_System.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItem_system_mng,
             this.ToolStripMenuItem_psMdf,
             this.toolStripSeparator1,
             this.ToolStripMenuItem_about});
@@ -212,29 +210,22 @@
             this.ToolStripMenuItem_System.Size = new System.Drawing.Size(44, 21);
             this.ToolStripMenuItem_System.Text = "系统";
             // 
-            // ToolStripMenuItem_system_mng
-            // 
-            this.ToolStripMenuItem_system_mng.Name = "ToolStripMenuItem_system_mng";
-            this.ToolStripMenuItem_system_mng.Size = new System.Drawing.Size(124, 22);
-            this.ToolStripMenuItem_system_mng.Text = "用户管理";
-            this.ToolStripMenuItem_system_mng.Click += new System.EventHandler(this.ToolStripMenuItem_system_mng_Click);
-            // 
             // ToolStripMenuItem_psMdf
             // 
             this.ToolStripMenuItem_psMdf.Name = "ToolStripMenuItem_psMdf";
-            this.ToolStripMenuItem_psMdf.Size = new System.Drawing.Size(124, 22);
+            this.ToolStripMenuItem_psMdf.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItem_psMdf.Text = "密码修改";
             this.ToolStripMenuItem_psMdf.Click += new System.EventHandler(this.ToolStripMenuItem_psMdf_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // ToolStripMenuItem_about
             // 
             this.ToolStripMenuItem_about.Name = "ToolStripMenuItem_about";
-            this.ToolStripMenuItem_about.Size = new System.Drawing.Size(124, 22);
+            this.ToolStripMenuItem_about.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItem_about.Text = "关于";
             this.ToolStripMenuItem_about.Click += new System.EventHandler(this.ToolStripMenuItem_about_Click);
             // 
@@ -407,7 +398,6 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_room;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_roomer;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_System;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_system_mng;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_psMdf;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_about;
